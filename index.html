@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark/Light</button>
+
+    <div class="container">
+        <h1>TIC-TAC-TOE</h1>
+        <p class="subtitle">Play against Player or Computer</p>
+
+        <div class="mode">
+            <button onclick="setMode('pvp')">Player vs Player</button>
+            <button onclick="setMode('cpu')">Player vs Computer</button>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" onclick="handleClick(0)"></div>
+            <div class="cell" onclick="handleClick(1)"></div>
+            <div class="cell" onclick="handleClick(2)"></div>
+            <div class="cell" onclick="handleClick(3)"></div>
+            <div class="cell" onclick="handleClick(4)"></div>
+            <div class="cell" onclick="handleClick(5)"></div>
+            <div class="cell" onclick="handleClick(6)"></div>
+            <div class="cell" onclick="handleClick(7)"></div>
+            <div class="cell" onclick="handleClick(8)"></div>
+        </div>
+
+        <h2 id="status">Player X's Turn</h2>
+
+        <button class="reset" onclick="resetGame()">Restart Game</button>
+    </div>
+
+    <script src="scirpt.js"></script>
+</body>
+</html>
